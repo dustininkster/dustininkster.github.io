@@ -10,11 +10,19 @@ body{
 }
 
 h1{
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
 }
 h2{
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
 }
 h3{
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img-thumbnail-height{
+    max-height:40%;
+}
+
+.middlealign{
+    vertical-align: middle;
 }
