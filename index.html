@@ -3,31 +3,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap-5.2.0-dist\css\bootstrap.css"/>
     <link rel="stylesheet" href="my.css">
-    <scripts src="my.js"></scripts>
+    <script src="my.js"></script>
 </head>
 <body>
 <!--*********NAVBAR STUFF**********************************-->
 <!--*************************************************************-->
 
-
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">Inkbitz Software</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav" data-bs-target="#navSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">Inkbitz Software</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-      <div class="collapse navbar-collapse" id="navbarNave">
-        <ul class="navbar-nav mr-auto">
-          <li class = "nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="DTIinfo">Dustin's Info<span class="sr-only">(current)</span></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class = "nav-item">
+            <a class="nav-link" href="#">Dustin's Info</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#web">Social Media</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#web">Social Media</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"href="#port">Portfolio</a>
+          <li class="nav-item">
+            <a class="nav-link"href="#port">Portfolio</a>
+          </li>
+          <li class = "nav-item">
+            <a class="nav-link" href="#next">What's next?</a>
           </li>
         </ul>
       </div>
@@ -78,6 +79,22 @@
       </div>
       <div class="col-sm-1"></div>
       </div>
+      <div class="row bg-concrete">
+        <div class="col text-center">
+          <h4>Certifications/Education:</h4>
+        </div>
+        <div class="row bg-concrete">
+          <div class="col">
+            <h5 class="bg-dark border text-center">LPI Linux Essentials Cetrification LE-1</h5>
+          </div>
+          <div class="col">
+            <h5 class="bg-dark border text-center">C++ and C# Certification from Lonestar College</h5>
+          </div>
+          <div class="col">
+            <h5 class="bg-dark border text-center">AS in Computer Programming from Lonestar in October of 2022</h5>
+          </div>
+        </div>
+      </div>
       <hr>
       <div class="row bg-concrete "><!--This creates the row with the header-->
         <div class="col text-center px-5"><!--This creates a single column that spans the row-->
@@ -103,27 +120,71 @@
     </div>
     <div class="row p-3">
       <div class="col">
-        <a href="#details" onclick="document.firstProject()" target="_blank"></a><img src="https://36.media.tumblr.com/358dc69fcb3a89faa9607af776b59d4f/tumblr_o5a3t6JyJy1vr0lpko1_1280.png" class="img-thumbnail"></a>
+        <a href="#details" onclick="firstProject()" ><img src="images\MixTracker.png" class="img-thumbnail"></a>
       </div>
       
       <div class="col">
-        <a href="https://codepen.io/dinkster8/pen/reYrKB" target="_blank"><img src="https://36.media.tumblr.com/358dc69fcb3a89faa9607af776b59d4f/tumblr_o5a3t6JyJy1vr0lpko1_1280.png" class="img-thumbnail"></a>
+        <a href="#details" onclick="secondProject()"><img src="images\LeafCounter.png" class="img-thumbnail"></a>
       </div>
     </div>
     <div class="row px-3">
-      <div class="col">
-        <a href="https://codepen.io/dinkster8/pen/reYrKB" target="_blank"><img src="https://36.media.tumblr.com/358dc69fcb3a89faa9607af776b59d4f/tumblr_o5a3t6JyJy1vr0lpko1_1280.png" class="img-thumbnail"></a>
+      <div class="col text-center">
+        <a href="#details" onclick="thirdProject()"><img src="images\QCHelperth.png" class="img-thumbnail "></a>
       </div>
-        <div class="col text-center">
-          <a href="https://play.google.com/store/apps/details?id=dustin.omgandroid" target="_blank"><img src="images/QCHelperth.png" class="img-fluid img-thumbnail-height"></a>
+        <div class="col">
+          <a href="#details" onclick="fourthProject()"><img src="images\Mythic.png" class="img-thumbnail"></a>
         </div>
       </div>
       <hr>
       <div class="row px-3 bg-concrete">
-        <div class="col">
-          <p id="details" class="bg-dark border">Test</p>
-          <!--This is broke still-->
+        <h3 class="text-center" id="projectLabel">Dustin's Portfolio Page!</h3>
+      </div>
+      <div class="row px-3 bg-concrete">
+        <div class="col py-3">
+          <p id="details" class="bg-dark border p-3">
+            I coded this page using HTML 5 and Bootstrap 5, along with a little bit of my own CSS and Javascript.  It is hosted by GitHub Pages.  While front-end web design is not my main focus, I understand
+            the basics.
+          </p>
+        </div>
+      </div>
+      <div class="row px-3 bg-concrete">
+      <div class="col py-3 text-center">
+        <div id="projectLink">
+        <p>
+          For more information on my other projects click on the images above.
+        </p>
+      </div>
+      </div>
+      </div>
+      <hr>
+      <div class="row px-3 bg-concrete">
+        <div class="col text-center py-3">
+          <h3 id="next">What's next?</h3>
+        </div>
+      </div>
+      <div class="row px-3 bg-concrete">
+        <div class="col py-3">
+          <p class="bg-dark border p-3">
+            Currently I'm working on further encapsulating and revising the graphical user interface used in my Concrete Mix Tracker project to be useful for other database programs.
+            Rather than have specific fields for concrete materials, a programmer using the interface could define their own custom labels and fields.  Future plans include creating
+            a web based version of the Mix Design Tracker and QC Helper apps using ASP.Net.  This would allow the QC Helper app to be available to Apple users.
+          </p>
         </div>
       </div>
     </div>
+<!--Stuff that bootstrap has to have for javascript-->
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
   </body>
