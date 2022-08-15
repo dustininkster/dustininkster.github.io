@@ -103,13 +103,10 @@
       </div>
       <div class="row bg-concrete">
         <div class="col-sm text-center p-3">
-          <button type="button" class="btn btn-block btn-light"><i class="fa fa-github"></i> Github</button>
+          <a type="button" class="btn btn-block btn-light" href="https://github.com/dustininkster" target="_blank"><i class="fa fa-github"></i> Github</a>
         </div>
         <div class="col-sm text-center p-3">
-          <button type="button" class="btn btn-block btn-success"><i class="fa fa-fire"></i> (freeCodeCamp)</button>
-        </div>
-        <div class="col-sm text-center p-3">
-          <button type="button" class="btn btn-block btn-info"><i class="fa fa-linkedin"></i> LinkedIn</button>
+          <a type="button" class="btn btn-block btn-info" href="https://www.linkedin.com/in/dustin-inkster-6802b666/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
         </div>
       </div>
     <hr>
@@ -135,26 +132,34 @@
           <a href="#details" onclick="fourthProject()"><img src="images\Mythic.png" class="img-thumbnail"></a>
         </div>
       </div>
+      <div class="row px-3">
+        <div class="row px-3 text-center">
+          <div class="col">
+            <a href="#details" class="bg-dark border px-3"onclick="thisPage()">Dustin's Portfolio Page</a>
+          </div>
+        </div>
+      </div>
       <hr>
       <div class="row px-3 bg-concrete">
-        <h3 class="text-center" id="projectLabel">Dustin's Portfolio Page!</h3>
+        <h3 class="text-center" id="projectLabel">Dustin's Portfolio Page</h3>
       </div>
       <div class="row px-3 bg-concrete">
         <div class="col py-3">
           <p id="details" class="bg-dark border p-3">
-            I coded this page using HTML 5 and Bootstrap 5, along with a little bit of my own CSS and Javascript.  It is hosted by GitHub Pages.  While front-end web design is not my main focus, I understand
-            the basics.
+            I coded this page using HTML 5 and Bootstrap 5, along with a little bit of my own CSS and Javascript using Visual Studio Code as an editor.  It is hosted by GitHub Pages.
           </p>
         </div>
       </div>
       <div class="row px-3 bg-concrete">
+        <div class="col"></div>
       <div class="col py-3 text-center">
-        <div id="projectLink">
+        <div id="projectLink" class="bg-dark border">
         <p>
           For more information on my other projects click on the images above.
         </p>
       </div>
       </div>
+      <div class="col"></div>
       </div>
       <hr>
       <div class="row px-3 bg-concrete">
@@ -166,7 +171,7 @@
         <div class="col py-3">
           <p class="bg-dark border p-3">
             Currently I'm working on further encapsulating and revising the graphical user interface used in my Concrete Mix Tracker project to be useful for other database programs.
-            Rather than have specific fields for concrete materials, a programmer using the interface could define their own custom labels and fields.  Future plans include creating
+            Rather than have specific fields for concrete materials, a programmer using the interface could define their own custom labels and fields by extending the <i>MainForm</i> class.  Future plans include creating
             a web based version of the Mix Design Tracker and QC Helper apps using ASP.Net.  This would allow the QC Helper app to be available to Apple users.
           </p>
         </div>
